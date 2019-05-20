@@ -1,8 +1,7 @@
 def alphabet_position(letter):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     if letter.isupper():
-        letter = letter.lower()
-        
+        letter = letter.lower()     
     result = alphabet.index(letter)    
     return result 
 
@@ -10,7 +9,6 @@ def rotate_character(char, rot):
     alphabet = "abcdefghijklmnopqrstuvwxyz"
     alphabet2 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     result = ""
-    
     for letters in char:
         if char not in alphabet:
             if char not in alphabet2:
